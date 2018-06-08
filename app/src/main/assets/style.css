@@ -20,3 +20,19 @@ a {
     color: #d1ccc0;
     font-weight: 700;
 }
+
+@media screen and (orientation:portrait) {
+    body {
+        flex-direction: column;
+    }
+
+    a + a {
+        margin-top: 10vmin;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    a + a {
+        margin-left: 10vmin;
+    }
+}
